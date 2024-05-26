@@ -24,7 +24,7 @@ public class player_Move : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             playerRigid.velocity = new Vector2(playerRigid.velocity.x, 0); // Y축 속도를 초기화
-            playerRigid.AddForce(new Vector2(0, 0.5f), ForceMode2D.Impulse);
+            playerRigid.AddForce(new Vector2(0, 5f), ForceMode2D.Impulse);
             playerAni.SetBool("isJump", true);
         }
         else
@@ -68,11 +68,6 @@ public class player_Move : MonoBehaviour
         {
             Destroy(other.gameObject);
             SceneManager.LoadScene("Start");
-        }
-
-        if (other.gameObject.tag == "DollarGut")
-        {
-            Destroy(other.gameObject);
         }
 
         if (other.gameObject.tag == "Jack")
