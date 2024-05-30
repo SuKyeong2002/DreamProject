@@ -21,20 +21,20 @@ public class DollarGut_Dialog : MonoBehaviour
         ab_Distance = Vector3.Distance(aPoint.transform.position, bPoint.transform.position);
         if (ab_Distance < 3.0f)
         {
-            dialog.SetActive(true);
+            gameObject.SetActive(true);
             if (alpha > 0)
             {
-                dialog.GetComponent<Image>().color = new Color(1, 1, 1, alpha);
+                gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alpha);
                 alpha -= Time.deltaTime * 0.1f;
             }
             else
             {
-                dialog.SetActive(false);
+                gameObject.SetActive(false);
             }
         }
         else
         {
-            dialog.SetActive(false);
+            gameObject.SetActive(true);
         }
     }
 }
