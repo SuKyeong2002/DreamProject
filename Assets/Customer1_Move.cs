@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Customer1_Move : MonoBehaviour
 {
-    float moveLR = 2.0f;
+    float moveLR = 1.0f;
     // int bullet = 0;
     // Score_Ctrl score;
 
@@ -17,32 +17,17 @@ public class Customer1_Move : MonoBehaviour
     void Update()
     {
         transform.Translate(moveLR * Time.deltaTime, 0, 0);
-        if (transform.position.x <= -12.0f)
+        if (transform.position.x <= -14.0f)
         {
-            transform.position = new Vector3(-12.0f, -3.3f, 0);
+            transform.position = new Vector3(-14.0f, -16.6f, 0);
             moveLR *= -1;
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if (transform.position.x >= 12.0f)
         {
-            transform.position = new Vector3(12.0f, -3.3f, 0);
+            transform.position = new Vector3(12.0f, -16.6f, 0);
             moveLR *= -1;
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
-
-    /*
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Book")
-        {
-            bullet = bullet + 1;
-            if (bullet == 1)
-            {
-                score.scoreNum += 30;
-                Destroy(gameObject);
-            }
-        }
-    }
-    */
 }

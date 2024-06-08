@@ -7,6 +7,14 @@ TagManager:
   - Key
   - DollarGut
   - Jack
+  - Dog
+  - Cat
+  - Customer1
+  - Customer2
+  - Customer3
+  - Cookie
+  - Icecream
+  - Dong
   layers:
   - Default
   - TransparentFX

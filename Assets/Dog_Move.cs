@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dog_Move : MonoBehaviour
 {
-    float moveLR = 4.0f;
+    float moveLR = 3.0f;
     // int bullet = 0;
     // Score_Ctrl score;
 
@@ -17,15 +17,15 @@ public class Dog_Move : MonoBehaviour
     void Update()
     {
         transform.Translate(-moveLR * Time.deltaTime, 0, 0);
-        if (transform.position.x <= -10.0f)
+        if (transform.position.x <= -17.0f)
         {
-            transform.position = new Vector3(-10.0f, 9.0f, 0);
+            transform.position = new Vector3(-17.0f, 6.8f, 0);
             moveLR *= -1;
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-        else if (transform.position.x >= 10.0f)
+        else if (transform.position.x >= 17.0f)
         {
-            transform.position = new Vector3(10.0f, 9.0f, 0);
+            transform.position = new Vector3(17.0f, 6.8f, 0);
             moveLR *= -1;
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }

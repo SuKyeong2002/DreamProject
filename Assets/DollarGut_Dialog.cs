@@ -25,7 +25,7 @@ public class DollarGut_Dialog : MonoBehaviour
             if (alpha > 0)
             {
                 gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, alpha);
-                alpha -= Time.deltaTime * 0.1f;
+                alpha -= Time.deltaTime * 0.2f;
             }
             else
             {
