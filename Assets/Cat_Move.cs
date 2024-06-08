@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cat_Move : MonoBehaviour
 {
-    float moveLR = 4.0f;
+    float moveLR = 3.5f;
     // int bullet = 0;
     // Score_Ctrl score;
 
@@ -19,13 +19,13 @@ public class Cat_Move : MonoBehaviour
         transform.Translate(-moveLR * Time.deltaTime, 0, 0);
         if (transform.position.x <= -16.5f)
         {
-            transform.position = new Vector3(-16.5f, 15.0f, 0);
+            transform.position = new Vector3(-16.5f, 6.8f, 0);
             moveLR *= -1;
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else if (transform.position.x >= 12.0f)
         {
-            transform.position = new Vector3(12.0f, 15.0f, 0);
+            transform.position = new Vector3(12.0f, 6.8f, 0);
             moveLR *= -1;
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }

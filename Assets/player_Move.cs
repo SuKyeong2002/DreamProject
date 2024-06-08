@@ -82,7 +82,7 @@ public class player_Move : MonoBehaviour
 
         if (other.gameObject.tag == "Jack")
         {
-            SceneManager.LoadScene("End");
+            SceneManager.LoadScene("Success");
         }
 
         if (other.gameObject.tag == "Customer1")
@@ -145,6 +145,18 @@ public class player_Move : MonoBehaviour
             Debug.Log("-30");
         }
 
+        if (other.gameObject.tag == "Boss")
+        {
+            StartCoroutine(DamageEffect());
+            hp = hp - 0.4f;
+            if (hp <= 0)
+            {
+                Destroy(gameObject);
+                SceneManager.LoadScene("End");
+            }
+            Debug.Log("-40");
+        }
+
         if (other.gameObject.tag == "Cookie")
         {
             StartCoroutine(DamageEffect());
@@ -180,11 +192,28 @@ public class player_Move : MonoBehaviour
             }
             Debug.Log("-10");
         }
+
+        if (other.gameObject.tag == "Book")
+        {
+            StartCoroutine(RecoveryEffect());
+            hp = hp + 0.2f;
+            Debug.Log("+20");
+            Destroy(other.gameObject);
+        }
     }
 
     IEnumerator DamageEffect()
     {
         GetComponent<SpriteRenderer>().material.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        GetComponent<SpriteRenderer>().material.color = Color.white;
+        yield return new WaitForSeconds(0.2f);
+    }
+
+    IEnumerator RecoveryEffect()
+    {
+        Color recoveryColor = new Color(0.5f, 0f, 0.5f);
+        GetComponent<SpriteRenderer>().material.color = recoveryColor;
         yield return new WaitForSeconds(0.2f);
         GetComponent<SpriteRenderer>().material.color = Color.white;
         yield return new WaitForSeconds(0.2f);

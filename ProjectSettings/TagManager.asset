@@ -15,6 +15,9 @@ TagManager:
   - Cookie
   - Icecream
   - Dong
+  - Book
+  - Boss
+  - magicStick
   layers:
   - Default
   - TransparentFX
