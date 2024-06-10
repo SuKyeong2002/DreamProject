@@ -5,7 +5,7 @@ using UnityEngine;
 public class Boss_Move : MonoBehaviour
 {
     public int hp2 = 100;
-    float moveLR = 0.5f;
+    float moveLR = 1.0f;
 
     void Start()
     {

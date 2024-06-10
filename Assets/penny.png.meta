@@ -107,9 +107,9 @@ TextureImporter:
       name: penny_leftArm
       rect:
         serializedVersion: 2
-        x: 30
-        y: 112
-        width: 23
+        x: 5
+        y: 118
+        width: 30
         height: 53
       alignment: 9
       pivot: {x: 0.81033707, y: 0.9124416}
@@ -128,10 +128,10 @@ TextureImporter:
       name: penny_body
       rect:
         serializedVersion: 2
-        x: 88
-        y: 118
-        width: 126
-        height: 174
+        x: 71
+        y: 102
+        width: 166
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,8 +149,8 @@ TextureImporter:
       name: penny_rightArm
       rect:
         serializedVersion: 2
-        x: 244
-        y: 120
+        x: 253
+        y: 113
         width: 37
         height: 53
       alignment: 9
@@ -170,10 +170,10 @@ TextureImporter:
       name: penny_leftLeg
       rect:
         serializedVersion: 2
-        x: 95
-        y: 22
-        width: 36
-        height: 38
+        x: 22
+        y: 15
+        width: 50
+        height: 35
       alignment: 9
       pivot: {x: 0.64870304, y: 0.9226306}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: penny_righLeg
       rect:
         serializedVersion: 2
-        x: 162
-        y: 22
-        width: 42
-        height: 37
+        x: 222
+        y: 10
+        width: 48
+        height: 36
       alignment: 9
       pivot: {x: 0.72305477, y: 0.9340532}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,6 +204,48 @@ TextureImporter:
       bones: []
       spriteID: 623cebc927d239841a5672108166dc82
       internalID: 1250351473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penny_rightHair
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 238
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c29ab72b155a6f488ef6b627eebd64a
+      internalID: 97428499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penny_cloth
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 227
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c53f4730ce3f144abc182431682933e
+      internalID: 1006605228
       vertices: []
       indices: 
       edges: []
@@ -222,6 +264,8 @@ TextureImporter:
       penny_leftLeg: 806212797
       penny_leftArm: -1026190566
       penny_rightArm: -580838457
+      penny_cloth: 1006605228
+      penny_rightHair: -2003302362
       penny_body: 772979456
       penny_righLeg: 1250351473
   spritePackingTag: 
