@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ReStartBtn : MonoBehaviour
+public class NoReStartBtn : MonoBehaviour
 {
-    public void ReStartScene()
+    public void NoReStartScene()
     {
-        SceneManager.LoadScene("Main2");
+        SceneManager.LoadScene("Main");
     }
 }
