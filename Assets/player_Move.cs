@@ -77,7 +77,7 @@ public class player_Move : MonoBehaviour
         if (other.gameObject.tag == "Key")
         {
             Destroy(other.gameObject);
-            SceneManager.LoadScene("Start");
+            SceneManager.LoadScene("Intro");
         }
 
         if (other.gameObject.tag == "Jack")
@@ -212,10 +212,11 @@ public class player_Move : MonoBehaviour
 
     IEnumerator RecoveryEffect()
     {
-        Color recoveryColor = new Color(0.5f, 0f, 0.5f);
+        Color recoveryColor = new Color(1f, 1f, 0f); // Yellow color
         GetComponent<SpriteRenderer>().material.color = recoveryColor;
         yield return new WaitForSeconds(0.2f);
         GetComponent<SpriteRenderer>().material.color = Color.white;
         yield return new WaitForSeconds(0.2f);
     }
+
 }
